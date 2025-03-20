@@ -13,14 +13,14 @@
         <nav>
             <img src="images/WEBPpic3.webp"class="logo">
             <ul id="sidemenu">
-                <li><a href="#"">Home</a></li>
-                <li><a href="#"">About</a></li>
-                <li><a href="#"">Sevices</a></li>
-                <li><a href="#"">Portofolio</a></li>
-                <li><a href="#"">Contact</a></li>
+                <li><a href="#header"">Home</a></li>
+                <li><a href="#about"">About</a></li>
+                <li><a href="#services"">Sevices</a></li>
+                <li><a href="#portofolio"">Portofolio</a></li>
+                <li><a href="#contact"">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <i class="fas fa-bars" o nclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>WEB And Mobile Programmer</p>
@@ -29,7 +29,7 @@
     </div>
 </div>
 <!----------about-------->
-<div id="About">
+<div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -80,7 +80,7 @@
 
 <!-----------services-->
 
-<div id="Services">
+<div id="services">
     <div class="container">
         <h1 class="sub-title">My services</h1>
         <div class="services-list">
@@ -112,7 +112,7 @@
 </div>
 
 <!-------------potofolio-------->
-<div id="Portofolio">
+<div id="portofolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
@@ -120,7 +120,7 @@
                 <img src="images/PNGpic2.png">
                 <div class="layer">
                     <h3>Social Media App</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                 <img src="images/PNGpic2.png">
                 <div class="layer">
                     <h3>Social Media App</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                 <img src="images/PNGpic2.png">
                 <div class="layer">
                     <h3>Social Media App</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -147,7 +147,7 @@
 
 <!-------------CONTACT-------->
 
-<div class="Contact">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -191,13 +191,14 @@
     }
 
 </script>
+
 <script>
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu(){
         sidemenu.style.right = "0";
     }
-    function closemenu(){
+    function closemenu(){ 
         sidemenu.style.right = "-200px";
     }
 </script>
