@@ -12,15 +12,15 @@
     <div class="container">
         <nav>
             <img src="images/WEBPpic3.webp"class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#"">Home</a></li>
                 <li><a href="#"">About</a></li>
                 <li><a href="#"">Sevices</a></li>
                 <li><a href="#"">Portofolio</a></li>
                 <li><a href="#"">Contact</a></li>
-                <i class="fas fa-times"></i>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>WEB And Mobile Programmer</p>
@@ -29,7 +29,7 @@
     </div>
 </div>
 <!----------about-------->
-<div id="about">
+<div id="About">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -80,7 +80,7 @@
 
 <!-----------services-->
 
-<div id="services">
+<div id="Services">
     <div class="container">
         <h1 class="sub-title">My services</h1>
         <div class="services-list">
@@ -112,7 +112,7 @@
 </div>
 
 <!-------------potofolio-------->
-<div id="portofolio">
+<div id="Portofolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
@@ -147,7 +147,7 @@
 
 <!-------------CONTACT-------->
 
-<div class="contact">
+<div class="Contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -190,6 +190,16 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
 </script>
 
 </body>

@@ -63,7 +63,7 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 /*----------about--------*/
-#about{
+#About{
     padding: 80px 0;
     color: #ababab;
 }
@@ -128,7 +128,7 @@ nav ul li a:hover::after{
 }
 
 /*-----services-----*/
-#services{
+#Services{
     padding: 30px 0;
 }
 .services-list{
@@ -168,7 +168,7 @@ nav ul li a:hover::after{
 
 /*----------------portofolio*---------------*/
 
-#portofolio{
+#Portofolio{
     padding: 50px;
 }
 .work-list{
@@ -341,6 +341,7 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s;
     }       
     nav ul li{
         display: block;
