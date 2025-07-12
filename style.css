@@ -20,20 +20,11 @@ body{
 }
 
 
-.imageME{
-
+.imageME {
     border-radius: 50%;
     border: 5px solid #d4af37;
-    max-width: 35%;
+    max-width: 600px;
     height: auto;
-
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: 50px;
-
-
 }
 .container{
     padding: 10px 10%;
@@ -41,11 +32,26 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* ini penting biar logo di kiri, menu di kanan */
     flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: ; /* pastikan punya background */
+    padding: 10px 50px; /* beri padding biar isi gak terlalu dempet */
+    box-sizing: border-box;
+    background: rgba(26, 26, 26, 0.9);
+
 }
 .logo{
     width: 140px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 nav ul li{
     display: inline-block;
@@ -71,16 +77,29 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text{
-    margin-top: 20%;
+.header-text {
+    flex: 1;
     font-size: 30px;
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
 .header-text h1 span{
     color: #d4af37;
+}
+.header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    flex-wrap: wrap;
 }
 
 /*----------about--------*/
@@ -376,21 +395,25 @@ nav .fas{
         z-index: 1;
         
     }
-    nav .fas{
-        display:block;
+    nav .fas {
+        display: block; /* tombol hamburger muncul */
         font-size: 25px;
+        color: white;
+        cursor: pointer;
+
     }
-    nav ul{
-        background: #d4af37;
+    nav ul {
+        background: #111;
         position: fixed;
         top: 0;
-        right: -200px;
+        right: -200px; /* disembunyikan di kanan */
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 3;
         transition: right 0.5s;
-    }       
+        flex-direction: column;
+    } 
     nav ul li{
         display: block;
         margin: 25px;
