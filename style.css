@@ -38,8 +38,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
-    background: ; /* pastikan punya background */
+    z-index: 10; /* pastikan punya background */
     padding: 10px 50px; /* beri padding biar isi gak terlalu dempet */
     box-sizing: border-box;
     background: rgba(26, 26, 26, 0.9);
